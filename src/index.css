@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 /* --- App --- */
 .app--container {  
@@ -21,4 +22,32 @@ body {
 .nav--container > img {
   padding-left: 30px;
   max-width: 113px;
+}
+/* --- Hero --- */
+.hero--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 36px;
+}
+.hero--photo-grid {
+  max-width: 396px;
+  width: 100%;
+  margin-top: 26px;
+}
+.hero--title-section {
+  margin-top: 32px;
+  align-self: self-start;
+}
+.hero--title-section > h1 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin: 0px;
+}
+.hero--title-section > p {
+  margin-top: 10px;
+  max-width: 320px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
 }
