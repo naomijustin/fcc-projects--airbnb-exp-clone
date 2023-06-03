@@ -20,4 +20,5 @@ body {
 }
 .nav--container > img {
   padding-left: 30px;
+  max-width: 113px;
 }
