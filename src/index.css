@@ -51,3 +51,12 @@ body {
   font-size: 1rem;
   font-weight: 300;
 }
+/* --- Card --- */
+.card--container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card--image-exp {
+  width: 176px;
+}
