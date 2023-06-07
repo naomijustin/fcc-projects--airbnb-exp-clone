@@ -59,4 +59,23 @@ body {
 }
 .card--image-exp {
   width: 176px;
+  margin-bottom: 3px;
+}
+.card--text-lower {
+  font-size: 0.75rem;
+  padding: 2px 0px;
+}
+.card--status-badge {
+  font-size: 0.68rem;
+  background-color: #FFFFFF;
+  position: absolute;
+  margin: 6px 0px 0px 6px;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.card--text-muted {
+  color: #918E9B;
+}
+.card--font-weight-300 {
+  font-weight: 300;
 }

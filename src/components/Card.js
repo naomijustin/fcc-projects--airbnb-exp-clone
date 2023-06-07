@@ -7,15 +7,15 @@ export default function Card() {
         <div className="card--container">
             <span className="card--status-badge">SOLD OUT</span>
             <img className="card--image-exp" src={imageExp} alt="Experience Background Image"></img>
-            <div>
+            <div className="card--text-lower card--font-weight-300">
                 <img src={starIcon} alt="Star Icon"></img>
                 <span> 5.0</span>
-                <span> (6) &#x2022; USA</span>
+                <span className="card--text-muted"> (6) &#x2022; USA</span>
             </div>
-            <div>Life lessons with Katie Zaferes</div>
-            <div>
+            <div className="card--text-lower card--font-weight-300">Life lessons with Katie Zaferes</div>
+            <div className="card--text-lower">
                 <b>From $136</b>
-                <span> / person</span>
+                <span className="card--font-weight-300"> / person</span>
             </div>
         </div>
     )
