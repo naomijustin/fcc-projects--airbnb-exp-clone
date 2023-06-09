@@ -5,11 +5,13 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
 /* --- App --- */
 .app--container {  
   width: 100%;
   margin: 0 auto;
 }
+
 /* --- Navbar --- */
 .nav--container {
   height: 70px;
@@ -23,6 +25,7 @@ body {
   padding-left: 30px;
   max-width: 113px;
 }
+
 /* --- Hero --- */
 .hero--container {
   display: flex;
@@ -51,6 +54,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
 }
+
 /* --- Card --- */
 .card--container {
   padding: 20px;
@@ -59,7 +63,7 @@ body {
 }
 .card--image-exp {
   width: 176px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 .card--text-lower {
   font-size: 0.75rem;
