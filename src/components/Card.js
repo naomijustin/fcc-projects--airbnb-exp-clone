@@ -3,6 +3,9 @@ import imageExp from "../images/katie-zaferes.png"
 import starIcon from "../images/star-icon.svg"
 
 export default function Card() {
+    const firstName = "Joe";
+    const lastName = "Schmoe";
+
     return (
         <div className="card--container">
             <span className="card--status-badge">SOLD OUT</span>
@@ -17,6 +20,7 @@ export default function Card() {
                 <b>From $136</b>
                 <span className="card--font-weight-300"> / person</span>
             </div>
+            <div>Hello {firstName} {lastName}!</div>
         </div>
     )
 }
