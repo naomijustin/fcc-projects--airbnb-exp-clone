@@ -8,7 +8,9 @@ function App() {
     <div className="app--container">
       <Navbar />
       <Hero />
-      <Card /> 
+      <Card 
+        img={require(`${"./images/katie-zaferes.png"}`)}
+      /> 
     </div>
   )
 }
