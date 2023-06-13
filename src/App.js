@@ -10,6 +10,11 @@ function App() {
       <Hero />
       <Card 
         img={require(`${"./images/katie-zaferes.png"}`)}
+        rating="5.0"
+        reviewCount={6}
+        country="USA"
+        title="Life lessons with Katie Zaferes"
+        price={136}
       /> 
     </div>
   )

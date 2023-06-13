@@ -5,18 +5,17 @@ import starIcon from "../images/star-icon.svg"
 export default function Card(props) {
 
     return (
-        <div className="card--container">
-            
+        <div className="card--container">            
             <span className="card--status-badge">SOLD OUT</span>
             <img className="card--image-exp" src={props.img} alt="Experience Background Image"></img>
             <div className="card--text-lower card--font-weight-300">
                 <img src={starIcon} alt="Star Icon"></img>
-                <span> 5.0</span>
-                <span className="card--text-muted"> (6) &#x2022; USA</span>
+                <span>&nbsp;{props.rating}</span>
+                <span className="card--text-muted"> ({props.reviewCount}) &#x2022; {props.country}</span>
             </div>
-            <div className="card--text-lower card--font-weight-300">Life lessons with Katie Zaferes</div>
+            <div className="card--text-lower card--font-weight-300">{props.title}</div>
             <div className="card--text-lower">
-                <b>From $136</b>
+                <b>From ${props.price}</b>
                 <span className="card--font-weight-300"> / person</span>
             </div>                     
         </div>
