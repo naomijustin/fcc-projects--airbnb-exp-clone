@@ -5,6 +5,11 @@ import Card from "./components/Card"
 import experiences from "./data.js"
 console.log(experiences);
 
+const cardsExp = experiences.map(item => {
+  return (<Card
+            img={require(`${"./images/" + item.coverImg}`)}
+          />);
+})
 /*
 Challenge:
 
@@ -30,7 +35,9 @@ function App() {
         title="Life lessons with Katie Zaferes"
         price={136}
       /> 
+      
     </div>
+    
   )
 }
 
