@@ -8,6 +8,11 @@ console.log(experiences);
 const cardsExp = experiences.map(item => {
   return (<Card
             img={require(`${"./images/" + item.coverImg}`)}
+            rating={item.stats.rating}
+            reviewCount={item.stats.reviewCount}
+            country={item.location}
+            title={item.title}
+            price={item.price}
           />);
 })
 /*
@@ -27,15 +32,15 @@ function App() {
     <div className="app--container">
       <Navbar />
       <Hero />
-      <Card 
+      {/* <Card 
         img={require(`${"./images/katie-zaferes.png"}`)}
         rating="5.0"
         reviewCount={6}
         country="USA"
         title="Life lessons with Katie Zaferes"
         price={136}
-      /> 
-      
+      />  */}
+      {cardsExp}
     </div>
     
   )
