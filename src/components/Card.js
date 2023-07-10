@@ -3,10 +3,15 @@ import React from "react"
 import starIcon from "../images/star-icon.svg"
 
 export default function Card(props) {
-
+    let badgeText;
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.country === 'Online') {
+        badgeText = "ONLINE"
+    }
     return (
         <div className="card--container">            
-            <span className="card--status-badge">SOLD OUT</span>
+            {badgeText && <span className="card--status-badge">{badgeText}</span>}
             <img className="card--image-exp" src={props.img} alt="Experience Background Image"></img>
             <div className="card--text-lower card--font-weight-300">
                 <img src={starIcon} alt="Star Icon"></img>

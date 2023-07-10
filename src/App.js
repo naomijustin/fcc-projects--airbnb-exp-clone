@@ -13,6 +13,7 @@ const cardsExp = experiences.map(item => {
             country={item.location}
             title={item.title}
             price={item.price}
+            openSpots={item.openSpots}
           />);
 })
 
